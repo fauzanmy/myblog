@@ -1,0 +1,12 @@
+baseURL = "https://fzn.my.id/"
+languageCode = "id"
+title = "Fauzan My"
+googleAnalytics = ""
+paginate = 2
+theme = "Coffeecode"
+
+[params]
+	description = "Blogger. Coffee farmer. Front end developer."
+
+[taxonomies]
+	tag = "tags"

@@ -1,0 +1,359 @@
+/*
+
+Additional Style
+
+*/
+
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Helvetica Neue", Helvetica, sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	color: #4a4a4a;
+	background-color: #fff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg {
+	max-height: 100%;
+}
+
+a {
+	color: #bd93f9;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bd93f9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.25;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.875rem;
+}
+
+h6 {
+	font-size: 0.75rem;
+}
+
+p,
+dl,
+ol,
+ul,
+pre,
+blockquote {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+code,
+pre,
+samp {
+	font-family: "Roboto Mono", "Source Code Pro", Menlo, Consolas,
+		"Liberation Mono", monospace;
+}
+
+code,
+samp {
+	font-size: 87.5%;
+	padding: 0.125em;
+}
+
+pre {
+	font-size: 87.5%;
+	overflow: scroll;
+}
+
+blockquote {
+	font-size: 1.25rem;
+	font-style: italic;
+	margin-left: 0;
+}
+
+hr {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	border: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #6272a4;
+}
+
+/* Colour */
+
+.white {
+	color: white
+}
+
+.silver {
+	color: #dddddd;
+}
+
+
+.gray {
+	color: #44475a
+}
+
+.dark {
+	color: #282a36
+}
+
+.chetwode-blue {
+	color: #6272a4
+}
+
+.purple {
+	color: #bd93f9
+}
+
+.muted {
+	opacity: .5
+}
+
+.fb {
+	color: #4267B2
+}
+
+.tt {
+	color: #00acee
+}
+
+/* Background Colour */
+
+.bg-white {
+	background-color: #ffffff
+}
+
+.bg-gray {
+	background-color: rgb(40, 42, 55)
+}
+
+.bg-dark {
+	background-color: #282a36
+}
+
+.bg-purple {
+	background-color: #bd93f9
+}
+
+.bg-fb {
+	background-color: #4267B2
+}
+
+.bg-tt {
+	background-color: #00acee
+}
+
+.bg-ig {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/* Medsos */
+
+.circon {
+	width: 2.25rem;
+	height: 2.25rem;
+}
+
+.align-middle {
+	vertical-align: middle
+}
+
+/* Sidenav */
+
+.sidenav {
+	margin: 0;
+}
+
+.sidenav .side-navigation {
+	padding: 1rem
+}
+
+#content {
+	padding: 1rem;
+}
+
+@media (max-width: 52em) {
+	.sidenav {
+		padding-bottom: 2rem;
+	}
+
+	#content {
+		margin-top: 2rem;
+	}
+
+}
+
+@media (min-width:52em) {
+	.sidenav {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.sidenav .side-navigation {
+		padding: 2rem;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	#content {
+		max-width: 48rem;
+		padding: 2rem;
+	}
+
+	.md-col-8 {
+		margin-left: 33.33333%
+	}
+
+}
+
+@media (min-width:64em) {
+	.sidenav {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.sidenav .side-navigation {
+		padding: 3rem;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	#content {
+		max-width: 48rem;
+		padding: 3rem 4rem;
+
+	}
+
+	.lg-col-9 {
+		margin-left: 25%;
+	}
+}
+
+
+/* Basscss Button */
+
+.btn {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1.125rem;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	height: auto;
+	border: 1px solid transparent;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	color: inherit;
+	background-color: transparent;
+}
+
+.btn:hover {
+	text-decoration: none;
+}
+
+.btn:focus {
+	outline: none;
+	border-color: rgba(0, 0, 0, 0.125);
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/* Basscss Btn Outline */
+
+.btn-outline,
+.btn-outline:hover {
+	border-color: currentcolor;
+}
+
+.btn-outline {
+	border-radius: 3px;
+}
+
+.btn-outline:hover {
+	box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+
+.btn-outline:active {
+	box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125),
+		inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
+}
+
+.btn-outline:disabled,
+.btn-outline.is-disabled {
+	opacity: 0.5;
+}
+
+/* Basscss Btn Primary */
+
+.btn-primary {
+	color: #fff;
+	background-color: #0074d9;
+	border-radius: 3px;
+}
+
+.btn-primary:hover {
+	box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+
+.btn-primary:active {
+	box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125),
+		inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
+}
+
+.btn-primary:disabled,
+.btn-primary.is-disabled {
+	opacity: 0.5;
+}

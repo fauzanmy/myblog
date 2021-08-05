@@ -1,0 +1,20 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{{ if .IsHome -}}
+	<title>{{ .Site.Title }}</title>
+	{{- else -}}
+	<title>{{ .Title }} → {{ .Site.Title }}</title>
+	{{- end }}
+	<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/style.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/basscss.min.css">
+
+	<!-- RSS etc -->
+	{{ range .AlternativeOutputFormats -}}
+	{{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+	{{ end -}}
+	{{ hugo.Generator }}
+</head>

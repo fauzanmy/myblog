@@ -1,0 +1,11 @@
+{{ define "main" -}}
+<h1 class="h1"><a class="text-decoration-none gray" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	<time class="h4 muted inline-block align-middle" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
+		<svg width="16" height="16" viewBox="0 0 16 16" class="inline-block align-middle mr1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+			<path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+		</svg>
+		<span class="inline-block align-middle">{{ .Date.Format "Monday, 2 Jan 2006" }}</span>
+	</time>
+{{ .Content }}
+{{- end }}
